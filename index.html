@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+        .director-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .director-card:hover {
+            transform: translateY(-10px);
+        }
+        .director-card img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#management">Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#operations">Operations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="slider1.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to Our Farms</h5>
+                    <p>Experience the best in dairy production.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="slider2.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Farm to Table</h5>
+                    <p>Delivering fresh products every day.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="slider3.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our Grocery Shop</h5>
+                    <p>Bringing you quality goods with trust.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Us -->
+    <section id="aboutus" class="py-5">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+
+            <!-- Farm 1 -->
+            <div class="row mb-4 align-items-center ">
+                <div class="col-md-6 border ">
+                    <h3>Farm 1</h3>
+                    <p>Established in 2010, Farm 1 is located in the lush countryside of Springfield. This farm spans over 100 acres and is dedicated to sustainable dairy farming practices. Managed by Director John Doe, Farm 1 produces high-quality milk products and supports local employment.</p>
+                    <p><strong>Location:</strong> Springfield</p>
+                    <p><strong>Director:</strong> John Doe</p>
+                    <p><strong>Year Established:</strong> 2010</p>
+                </div>
+                
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509423!2d-122.41941548468153!3d37.77492927975947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c1c35d53%3A0xa6b7cdd1bc36071b!2sFarm%201!5e0!3m2!1sen!2sus!4v1700000000000" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <!-- Farm 1 Slider -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3>Farm 1</h3>
+                    <div id="farm1Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="farm1-image1.jpg" class="d-block w-100" alt="Farm 1 Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="farm1-image2.jpg" class="d-block w-100" alt="Farm 1 Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="farm1-image3.jpg" class="d-block w-100" alt="Farm 1 Image 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#farm1Carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#farm1Carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Farm 2 -->
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-6 border">
+                    <h3>Farm 2</h3>
+                    <p>Farm 2 began operations in 2015 and is located in the scenic valley of Greenfield. Spanning 120 acres, this farm focuses on advanced dairy production methods to ensure quality and efficiency. Led by Director Jane Smith, Farm 2 also hosts community outreach programs to promote sustainable farming.</p>
+                    <p><strong>Location:</strong> Greenfield</p>
+                    <p><strong>Director:</strong> Jane Smith</p>
+                    <p><strong>Year Established:</strong> 2015</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509423!2d-122.41941548468153!3d37.77492927975947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c1c35d53%3A0xa6b7cdd1bc36071b!2sFarm%202!5e0!3m2!1sen!2sus!4v1700000000001" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <!-- Farm 2 Slider -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3>Farm 2</h3>
+                    <div id="farm2Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="farm2-image1.jpg" class="d-block w-100" alt="Farm 2 Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="farm2-image2.jpg" class="d-block w-100" alt="Farm 2 Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="farm2-image3.jpg" class="d-block w-100" alt="Farm 2 Image 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#farm2Carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#farm2Carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Grocery Shop -->
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-6 border">
+                    <h3>Our Grocery Shop</h3>
+                    <p>Opened in 2018, our grocery shop is situated in the bustling town center of Lakeside. The shop offers a wide range of dairy products and groceries, directly sourced from our farms. Managed by a dedicated team, it ensures fresh and reliable products for the local community.</p>
+                    <p><strong>Location:</strong> Lakeside</p>
+                    <p><strong>Year Established:</strong> 2018</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509423!2d-122.41941548468153!3d37.77492927975947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c1c35d53%3A0xa6b7cdd1bc36071b!2sShop!5e0!3m2!1sen!2sus!4v1700000000002" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <!-- Grocery Shop Slider -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3>Grocery Shop</h3>
+                    <div id="groceryShopCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="grocery-shop-image1.jpg" class="d-block w-100" alt="Grocery Shop Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="grocery-shop-image2.jpg" class="d-block w-100" alt="Grocery Shop Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="grocery-shop-image3.jpg" class="d-block w-100" alt="Grocery Shop Image 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#groceryShopCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#groceryShopCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management -->
+    <section id="management" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Management</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card director-card">
+                        <img src="director1.jpg" alt="Director 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">Managing Director - Bringing excellence to our dairy operations.</p>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card director-card">
+                        <img src="director1.jpg" alt="Director 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">Managing Director - Bringing excellence to our dairy operations.</p>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Operations Section -->
+<section id="operations" class="py-5">
+    <div class="container">
+        <h2 class="section-title">Our Operations</h2>
+        <div class="row text-center">
+            <!-- Grass Production -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="grass.jpg" class="img-fluid mb-3" alt="Grass Production">
+                        <h5 class="card-title">Grass Production</h5>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#grassModal">More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Milk Production -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="milk.jpg" class="img-fluid mb-3" alt="Milk Production">
+                        <h5 class="card-title">Milk Production</h5>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#milkModal">More</button>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Cow Production -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="cow-production.jpg" class="img-fluid mb-3" alt="Cow Production">
+                        <h5 class="card-title">Cow Production</h5>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cowModal">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Grass Modal -->
+<div class="modal fade" id="grassModal" tabindex="-1" aria-labelledby="grassModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body d-flex">
+                <div class="me-4" style="flex: 1;">
+                    <div id="grassCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="grass1.jpg" class="d-block w-100" alt="Grass 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="grass2.jpg" class="d-block w-100" alt="Grass 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="grass3.jpg" class="d-block w-100" alt="Grass 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#grassCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#grassCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div style="flex: 1;">
+                    <h5>Grass Production</h5>
+                    <p>Our grass production operation ensures high-quality forage for our cattle. With sustainable farming methods, we produce nutrient-rich grass that forms the basis of our dairy excellence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Repeat for other modals with individual carousels -->
+<!-- Milk Modal -->
+<div class="modal fade" id="milkModal" tabindex="-1" aria-labelledby="milkModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body d-flex">
+                <div class="me-4" style="flex: 1;">
+                    <div id="milkCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="milk1.jpg" class="d-block w-100" alt="Milk 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="milk2.jpg" class="d-block w-100" alt="Milk 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="milk3.jpg" class="d-block w-100" alt="Milk 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#milkCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#milkCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div style="flex: 1;">
+                    <h5>Milk & Milk-Based Product Production</h5>
+                    <p>We use state-of-the-art equipment to produce fresh, high-quality milk. Our dairy farms adhere to strict hygiene and quality standards to ensure the best for our consumers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Milk Modal -->
+<div class="modal fade" id="cowModal" tabindex="-1" aria-labelledby="cowModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body d-flex">
+                <div class="me-4" style="flex: 1;">
+                    <div id="milkCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="milk1.jpg" class="d-block w-100" alt="Milk 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="milk2.jpg" class="d-block w-100" alt="Milk 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="milk3.jpg" class="d-block w-100" alt="Milk 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#milkCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#milkCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div style="flex: 1;">
+                    <h5>Cow Production</h5>
+                    <p>We use state-of-the-art equipment to produce fresh, high-quality milk. Our dairy farms adhere to strict hygiene and quality standards to ensure the best for our consumers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Products Section -->
+<section id="products" class="py-5">
+    <div class="container">
+        <h2 class="section-title">Our Products</h2>
+        <div class="row">
+            <!-- Product Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Milk</h5>
+                        <p class="card-text">Size: 1 Liter</p>
+                        <p class="card-text"><strong>Price:</strong> $2.99</p>
+                        <button class="btn btn-primary" onclick="showPhoneNumber('phone1')">Call for Order</button>
+                        <p id="phone1" class="phone-number" style="display:none; margin-top: 10px;"><strong>Call us at:</strong> (123) 456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="product2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese Block</h5>
+                        <p class="card-text">Size: 500g</p>
+                        <p class="card-text"><strong>Price:</strong> $5.99</p>
+                        <button class="btn btn-primary" onclick="showPhoneNumber('phone2')">Call for Order</button>
+                        <p id="phone2" class="phone-number" style="display:none; margin-top: 10px;"><strong>Call us at:</strong> (123) 456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="product3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Butter</h5>
+                        <p class="card-text">Size: 250g</p>
+                        <p class="card-text"><strong>Price:</strong> $3.49</p>
+                        <button class="btn btn-primary" onclick="showPhoneNumber('phone3')">Call for Order</button>
+                        <p id="phone3" class="phone-number" style="display:none; margin-top: 10px;"><strong>Call us at:</strong> (123) 456-7890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<div id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+            <form action="#" method="POST">
+                <!-- Name Field -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Phone Number Field -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Message Field -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <!-- First Row: Contact Info -->
+        <div class="row mb-4">
+            <!-- Head Office Card -->
+            <div class="col-md-3">
+                <div class="card border-dark">
+                    <div class="card-body p-0">
+                        <h5 class="card-title p-3">Head Office</h5>
+                        <div class="border-top border-dark">
+                            <p class="p-3">123 Main Street, Springfield</p>
+                            <p class="p-3"><strong>Phone:</strong> +1 123-456-7890</p>
+                            <p class="p-3"><strong>Email:</strong> headoffice@company.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Head Office Card -->
+            <div class="col-md-3">
+                <div class="card border-dark">
+                    <div class="card-body p-0">
+                        <h5 class="card-title p-3">Firm-1</h5>
+                        <div class="border-top border-dark">
+                            <p class="p-3">123 Main Street, Springfield</p>
+                            <p class="p-3"><strong>Phone:</strong> +1 123-456-7890</p>
+                            <p class="p-3"><strong>Email:</strong> headoffice@company.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Head Office Card -->
+            <div class="col-md-3">
+                <div class="card border-dark">
+                    <div class="card-body p-0">
+                        <h5 class="card-title p-3">Firm-2</h5>
+                        <div class="border-top border-dark">
+                            <p class="p-3">123 Main Street, Springfield</p>
+                            <p class="p-3"><strong>Phone:</strong> +1 123-456-7890</p>
+                            <p class="p-3"><strong>Email:</strong> headoffice@company.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Head Office Card -->
+            <div class="col-md-3">
+                <div class="card border-dark">
+                    <div class="card-body p-0">
+                        <h5 class="card-title p-3">Grocery Shop</h5>
+                        <div class="border-top border-dark">
+                            <p class="p-3">123 Main Street, Springfield</p>
+                            <p class="p-3"><strong>Phone:</strong> +1 123-456-7890</p>
+                            <p class="p-3"><strong>Email:</strong> headoffice@company.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>  
+        <hr>
+        <!-- Second Row: Copyright Section -->
+        <div class="row  py-2">
+            <div class="col text-center">
+                <p>&copy; 2025 Prudential Milks Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopButton" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+    &#8593; Top
+</button>
+
+<script>
+    // Show or hide the scroll to top button based on scroll position
+    window.onscroll = function() {
+        let button = document.getElementById("scrollTopButton");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    // Scroll to the top when the button is clicked
+    document.getElementById("scrollTopButton").onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
+
+
+<script>
+    // Function to show phone number on button click
+    function showPhoneNumber(phoneId) {
+        var phoneElement = document.getElementById(phoneId);
+        phoneElement.style.display = 'block'; // Show phone number
+    }
+</script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
